@@ -10,4 +10,6 @@ console.log(z);*/
 }
 var x=multiply(10,20);
 console.log(x);*/
-var myfunction=new Function("a","b",return a*b);
+var myfunction=new Function("a","b","return a*b");
+var z=myfunction(10,30);
+console.log(z);

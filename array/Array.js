@@ -9,4 +9,6 @@ console.log(arr.length);//
 console.log(arr2);//
 console.log(arr[0]=60);//
 console.log(arr);//   
-var obj=(first:"First",second:"second",third:"Third", age:50);
+var obj={first:"First1",second:"second2",third:"Third3", age:50};
+console.log(obj["first"]);
+console.log(obj.first);
