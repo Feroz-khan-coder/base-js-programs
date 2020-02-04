@@ -1,9 +1,13 @@
-var num=121;
-var rem,sum=0;
-while(num!=0)
-{
-    rem=num%10;
-    sum=sum*10+rem;
-    num=num/10;
-}
-console.log(sum);
+function reverseNumber(number) {
+
+    var revNumber = 0;
+  
+    while (number > 0) {
+      revNumber = (revNumber * 10) + (number % 10);
+      number = number / 10;
+    }
+  
+    return revNumber;
+  }
+  
+  console.log(reverseNumber(876));

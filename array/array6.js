@@ -7,13 +7,14 @@ function myfunction()
 var newfruitslist=myfunction();
 console.log(fruits);*/
 
-//var fruits=["apple","apricot","avocado","banana","blackcurrent","blueberyy","cherry"];
-var fruits=[];
-fruits[0]="coconut";
-fruits[1]="fig";
-fruits[2]="graps";
-fruits[3]="kiwi";
-console.log(fruits);
-console.log(fruits[0]+" "+ fruits.length);
+var fruits=["apple","apricot","avocado","banana","blackcurrent","blueberyy","cherry"];
+/*console.log(fruits[0]+" "+ fruits.length);
 console.log(typeof fruits);
-console.log(Array.isArray(fruits));
+console.log(Array.isArray(fruits));*/
+/*function isArray(myArray) 
+ {
+   return myArray.constructor.toString().indexOf("Array") > -1;
+ }
+ console.log(isArray(fruits));*/
+ console.log(fruits instanceof Array);
+ 
