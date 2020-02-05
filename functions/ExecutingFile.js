@@ -10,6 +10,14 @@ console.log(searchResult);*/
 var newName=  firstAndLastName("Feroz","khan");
 console.log(newName);*/
 
-var person=require('./Exports')
+/*var person=require('./Exports')
 var person2=new person("khan","khan2");
-console.log(person2.fullName());
+console.log(person2.fullName());*/
+
+var myfunction=require('./ExportingAllFuncAtAtime')
+var add=myfunction.addition(10,20);
+var mull=myfunction.multiplication(10,20);
+var sub=myfunction.subtraction(20,10);
+console.log(add);
+console.log(sub);
+console.log(mull);
