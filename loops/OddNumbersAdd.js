@@ -1,0 +1,10 @@
+var num=100;
+var tem=0;
+for(var i=1;i<=num;i++)
+{
+    if(i%2!=0)
+    {
+        tem=tem+i;
+    }
+}
+console.log(tem);

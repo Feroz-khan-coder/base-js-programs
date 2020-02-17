@@ -13,16 +13,20 @@ var busesList=function(Bus1,source,destination,)// Find the Buses As per the sou
 }
 var priceOfBusList=function(arrayBus)
 {
-    var emptyArrayForPrice=[];
-    for(i=0;i<arrayBus.length;i++)
+    for(var i=0;i<arrayBus.length-1;i++)
     {
-       // var emtpy1=arrayBus[i];
-        var temp;
-      if(arrayBus[i].price>arrayBus[i+1].price);
-        temp=arrayBus[i].price;
-        arrayBus[i].price=arrayBus[i+1].price;
-        arrayBus[i+1].price=temp;
+       // console.log(arrayBus[i].price);
+        var temp=[];
+      if(arrayBus[i].price>arrayBus[i+1].price)     
+       {
+        temp=arrayBus[i]
+       // console.log(temp);
+        arrayBus[i]=arrayBus[i+1];
+       // console.log(arrayBus[i]);
+        arrayBus[i+1]=temp;
+       // console.log(arrayBus[i+1]);
         i=-1;
+       }
     }
     return arrayBus;
 }
@@ -32,15 +36,13 @@ var Buses=[{BusNumber:"12JI83T5",operator:"RedBus",source:"Hyderabad",destinatio
 {BusNumber:"T45JIEK",operator:"MKT",source:"CHENNAI",destination:"Hyderabad",price:1450,startTime:"9AM",endTime:"9PM"},
 {BusNumber:"12JI8343",operator:"RedBus",source:"Hyderabad",destination:"Bangalore",price:1000,startTime:"7AM",endTime:"8Pm"},
 {BusNumber:"12JKU4ER",operator:"Yalls",source:"Hyderabad",destination:"Bangalore",price:2000,startTime:"9AM",endTime:"8Pm"},
-{BusNumber:"12JKIU89",operator:"RedBu",source:"Hyderabad",destination:"Bangalore",price:1280,startTime:"10AM",endTime:"8Pm"}];
+{BusNumber:"12JKIU89",operator:"RedBull",source:"Hyderabad",destination:"Bangalore",price:1280,startTime:"10AM",endTime:"8Pm"}];
 
 var newListOfBus=busesList(Buses,"Hyderabad","Bangalore");
 //console.log(newListOfBus);
 var resultOfPriceOfBusList=priceOfBusList(newListOfBus);
 console.log(resultOfPriceOfBusList);
-/*var newListOfBus1=busesList(Buses,"8AM");*/
-
+/*var newListOfBus1=busesList(Buses,"8AM");
 //var helloResult=newListOfBus.push("Hello");
 //console.log(helloResult);
-//console.log(Buses);
-//console.log(newListOfBus);
+//console.log(Buses)*/
